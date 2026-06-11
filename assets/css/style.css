@@ -105,7 +105,7 @@ main.snap { height: 100vh; overflow-y: scroll; position: relative; scroll-behavi
 .cover__title em { color: var(--accent-deep); }
 .cover__meta { font-size: 18px; color: var(--text-sub); margin: 26px 0 44px; }
 .cover__meta span { color: var(--accent-deep); margin: 0 10px; }
-.cover__thumbs { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.cover__thumbs { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; }
 .cover__thumbs li { background: #fff; border: 1px solid var(--line);
   border-radius: var(--r); padding: 16px; box-shadow: var(--shadow-card); transition: box-shadow .2s; }
 .cover__thumbs li:hover { box-shadow: var(--shadow-md); }
@@ -116,7 +116,7 @@ main.snap { height: 100vh; overflow-y: scroll; position: relative; scroll-behavi
 
 /* === 표지: 타이틀(좌) + 개편 개요(우) === */
 .cover__top { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: start;
-  margin-bottom: 48px; }
+  margin-bottom: 28px; }
 .cover__overview { background: #fff; border: 1px solid var(--line); border-radius: var(--r);
   padding: 26px 30px; box-shadow: var(--shadow-card); }
 .cover__overview .kicker { margin-bottom: 12px; }
@@ -125,13 +125,13 @@ main.snap { height: 100vh; overflow-y: scroll; position: relative; scroll-behavi
 .cover__overview .overview__list li:last-child { margin-bottom: 0; }
 /* 시안 미리보기 그룹 라벨 (상단 영역과 구분) */
 .cover__thumbs-label { display: inline-flex; align-items: center; gap: 9px; font-size: 15px;
-  font-weight: 800; color: var(--accent-deep); margin-bottom: 18px; }
+  font-weight: 800; color: var(--accent-deep); margin-bottom: 12px; }
 .cover__thumbs-label::before { content: ''; width: 8px; height: 8px; background: var(--accent); border-radius: 2px; }
 /* 표지 한 화면에 맞춤 (높이 축소) */
-#cover { padding: 44px 56px 150px; }
-.cover .cover__title { font-size: clamp(32px, 4vw, 54px); line-height: 1.12; }
-.cover .cover__thumbs img { height: 118px; margin: 10px 0; }
-.cover .cover__thumbs li { padding: 13px; }
+#cover { padding: 40px 56px 90px; }
+.cover .cover__title { font-size: clamp(30px, 3.6vw, 48px); line-height: 1.12; }
+.cover .cover__thumbs img { height: 185px; margin: 10px 0; }
+.cover .cover__thumbs li { padding: 12px; }
 .cover .cover__nm { font-size: 16px; }
 
 /* === 비교표 한 화면 맞춤 === */
@@ -280,7 +280,7 @@ body.hide-cursor-viz .story__viz, body.hide-cursor-viz .story__viz * { cursor: n
   .bench-list { grid-template-columns: 1fr; gap: 16px; }
   .cover__top { grid-template-columns: 1fr; gap: 26px; margin-bottom: 28px; }
   .cover__overview { padding-left: 0; }
-  .cover__thumbs { grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+  .cover__thumbs { grid-template-columns: 1fr 1fr; gap: 14px; }
   .cover__thumbs img { height: 120px; }
   .dotnav { right: 12px; }
 }
